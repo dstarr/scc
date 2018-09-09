@@ -18,8 +18,7 @@ class App extends Component {
     };
   }
 
-
-  render() {
+  render = () => {
     return (
       <div className="App">
 
@@ -33,7 +32,7 @@ class App extends Component {
 
       </div>
     );
-  }
+  };
 
   handleAddPerson = (name) => {
 
@@ -52,6 +51,15 @@ class App extends Component {
 
   };
 
+  handleDeletePerson = (id) => {
+
+    let persons = this.state.people.filter(person => (id !== person.id));
+
+    this.setState({
+      people: persons
+    });
+  };
+
   getId = () => {
 
     let currentId = 0;
@@ -65,14 +73,6 @@ class App extends Component {
     return currentId + 1;
   };
 
-  handleDeletePerson = (id) => {
-
-    let persons = this.state.people.filter(person => (id !== person.id));
-
-    this.setState({
-      people: persons
-    });
-  }
 }
 
 export default App;

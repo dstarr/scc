@@ -17,7 +17,7 @@ const Person = (props) => {
               onClick={() => props.onDeletePerson(props.id)}>Delete</Button>
     </div>
   );
-}
+};
 
 Person.propTypes = {
   onDeletePerson: PropTypes.func.isRequired

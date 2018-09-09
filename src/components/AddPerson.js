@@ -39,7 +39,7 @@ class AddPerson extends Component {
     this.setState({
       name: ''
     });
-  }
+  };
 
   handleChange = (e) => {
 
