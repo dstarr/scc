@@ -20,6 +20,8 @@ const Person = (props) => {
 };
 
 Person.propTypes = {
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
   onDeletePerson: PropTypes.func.isRequired
 };
 
