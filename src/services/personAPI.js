@@ -1,7 +1,7 @@
 
 class personAPI {
 
-  getPeople = () => {
+  getAll = () => {
     return [
       {id: 1, name: 'Phillip Fry'},
       {id: 2, name: 'Turanga Leela'},

@@ -3,7 +3,7 @@ import './App.css';
 import Header from "./components/Header";
 import People from "./components/People";
 
-import personAPI from './services/personaAPI';
+import personAPI from './services/personAPI';
 import AddPerson from "./components/AddPerson";
 
 let personApi = new personAPI();
@@ -15,7 +15,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      people: personApi.getPeople()
+      people: personApi.getAll()
     };
   }
 
